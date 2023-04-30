@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/registerID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/gray"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="아이디(이메일주소)" />
+
+        <Button
+            android:id="@+id/BtnDoubleCheck"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2.7"
+            android:background="@drawable/outline_radius_color"
+            android:text="중복 확인"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/registerPW"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/gray"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="비밀번호" />
+
+    <EditText
+        android:id="@+id/registerPWCheck"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/gray"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="비밀번호확인" />
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/gray"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="이름(닉네임)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/registerPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/gray"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="전화번호" />
+
+        <Button
+            android:id="@+id/BtnNumberVerification"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.7"
+            android:background="@drawable/outline_radius_color"
+            android:text="인증 번호 전송"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/registerVerification"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/gray"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="인증번호" />
+
+        <Button
+            android:id="@+id/BtnNumberVerificationCheck"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.7"
+            android:background="@drawable/outline_radius_color"
+            android:text="인증 번호 확인"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/registerBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/gray"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="생년월일" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/registerRdBtnMan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="남"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/registerRdBtnWoman"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="여"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/outline_rectangle_color"
+        android:text="회원가입"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>
