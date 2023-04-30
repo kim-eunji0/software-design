@@ -12,7 +12,19 @@
         android:theme="@style/Theme.Closet"
         tools:targetApi="31">
         <activity
-            android:name=".ClothAdd"
+            android:name=".ClothCodi"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Community"
+            android:exported="false" />
+        <activity
+            android:name=".ClothRevise"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,13 +33,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ClothAdd"
+            android:exported="true" />
+        <activity
             android:name=".LogIn"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Register"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
