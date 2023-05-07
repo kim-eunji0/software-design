@@ -16,6 +16,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/reviseBtnCancel"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="2"
@@ -38,12 +39,13 @@
             android:textColor="@color/black" />
 
         <Button
+            android:id="@+id/reviseBtnComplete"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="2"
             android:layout_marginLeft="10dp"
             android:background="@drawable/rectangle_color"
-            android:text="수정"
+            android:text="완료"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black" />
@@ -65,6 +67,7 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:id="@+id/reviseName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -89,6 +92,7 @@
             android:textColor="@color/black" />
 
         <ImageView
+            android:id="@+id/revisePicture"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="10dp"
@@ -117,6 +121,7 @@
             android:orientation="horizontal" >
 
             <RadioButton
+                android:id="@+id/reviseRDTop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -126,6 +131,7 @@
                 android:checked="true" />
 
             <RadioButton
+                android:id="@+id/reviseRDBottom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -134,6 +140,7 @@
                 android:textColor="@color/black" />
 
             <RadioButton
+                android:id="@+id/reviseRDOuter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -149,6 +156,7 @@
             android:orientation="horizontal" >
 
             <RadioButton
+                android:id="@+id/reviseRDCap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -157,6 +165,7 @@
                 android:textColor="@color/black" />
 
             <RadioButton
+                android:id="@+id/reviseRDShoes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -165,6 +174,7 @@
                 android:textColor="@color/black" />
 
             <RadioButton
+                android:id="@+id/reviseRdEtc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -191,6 +201,7 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:id="@+id/reviseMemo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

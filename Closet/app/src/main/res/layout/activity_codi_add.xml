@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_margin="15dp"
     android:orientation="vertical"
-    tools:context=".ClothAdd">
+    tools:context=".CodiAdd">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/addBtnCancel"
+            android:id="@+id/codiAddBtnCancle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="2"
@@ -33,13 +33,13 @@
             android:layout_weight="1"
             android:gravity="center"
             android:background="@drawable/outline_rectangle_2"
-            android:text="새로운 옷"
+            android:text="새로운 코디"
             android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/addBtnAdd"
+            android:id="@+id/codiAddBtnAdd"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="2"
@@ -62,12 +62,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="이름>"
+            android:text="제목>"
             android:textSize="20sp"
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/addName"
+            android:id="@+id/codiAddTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -91,7 +91,7 @@
             android:textColor="@color/black" />
 
         <ImageView
-            android:id="@+id/addPicture"
+            android:id="@+id/codiAddPicture"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="10dp"
@@ -100,88 +100,27 @@
 
     </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="카테고리>"
-        android:textSize="20sp"
-        android:textColor="@color/black" />
+        android:orientation="horizontal">
 
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_marginTop="20dp"
+            android:text="코디 공개>"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
 
-            <RadioButton
-                android:id="@+id/addRDTop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="상의"
-                android:textSize="20sp"
-                android:textColor="@color/black" />
-
-            <RadioButton
-                android:id="@+id/addRDBottom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="하의"
-                android:textSize="20sp"
-                android:textColor="@color/black" />
-
-            <RadioButton
-                android:id="@+id/addRDOuter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="아우터"
-                android:textSize="20sp"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <CheckBox
+            android:id="@+id/codiAddChkShare"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_marginTop="20dp" />
 
-            <RadioButton
-                android:id="@+id/addRDCap"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="모자"
-                android:textSize="20sp"
-                android:textColor="@color/black" />
-
-            <RadioButton
-                android:id="@+id/addRDShoes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="신발"
-                android:textSize="20sp"
-                android:textColor="@color/black" />
-
-            <RadioButton
-                android:id="@+id/addRDEtc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="기타    "
-                android:textSize="20sp"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
-
-    </RadioGroup>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -195,15 +134,17 @@
             android:layout_marginTop="20dp"
             android:text="메모>"
             android:textSize="20sp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"/>
 
         <EditText
-            android:id="@+id/addMemo"
+            android:id="@+id/codiAddMemo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textSize="20sp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:hint="(체크X) 비공개 시, 메모\n(체크O) 공개 시, 게시글"/>
+
     </LinearLayout>
 
 </LinearLayout>
