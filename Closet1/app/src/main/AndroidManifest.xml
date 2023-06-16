@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Closet"
+        tools:targetApi="31">
+        <activity
+            android:name=".clothModi.ClothModifyEtc"
+            android:exported="false" />
+        <activity
+            android:name=".clothModi.ClothModiShoes"
+            android:exported="false" />
+        <activity
+            android:name=".clothModi.ClothModifyCap"
+            android:exported="false" />
+        <activity
+            android:name=".clothModi.ClothModifyOuter"
+            android:exported="false" />
+        <activity
+            android:name=".clothModi.ClothModifyBottom"
+            android:exported="false" />
+        <activity
+            android:name=".clothModi.ClothModifyTop"
+            android:exported="false" />
+        <activity
+            android:name=".clothView.ClothViewEtc"
+            android:exported="false" />
+        <activity
+            android:name=".clothView.ClothViewShoes"
+            android:exported="false" />
+        <activity
+            android:name=".clothView.ClothViewCap"
+            android:exported="false" />
+        <activity
+            android:name=".clothView.ClothViewOuter"
+            android:exported="false" />
+        <activity
+            android:name=".clothView.ClothViewBottom"
+            android:exported="false" />
+        <activity
+            android:name=".clothView.ClothViewTop"
+            android:exported="false" />
+        <activity
+            android:name=".clothView.ClothView"
+            android:exported="false" />
+        <activity
+            android:name=".mainfragment.Home"
+            android:exported="false" />
+        <activity
+            android:name=".clothModi.ClothModify"
+            android:exported="true" />
+        <activity
+            android:name=".ClothAdd"
+            android:exported="true" />
+        <activity
+            android:name=".LogIn"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

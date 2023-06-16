@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "972845415017",
+    "project_id": "closet2-9bf6a",
+    "storage_bucket": "closet2-9bf6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972845415017:android:543cdb4feb81f7a69240f8",
+        "android_client_info": {
+          "package_name": "com.cookandroid.closet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972845415017-uqlk1o27r3au92vgt96cc839pqpbhttk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmooIO-JhHqtGLYFaWSvuO-yCSMit3gIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972845415017-uqlk1o27r3au92vgt96cc839pqpbhttk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

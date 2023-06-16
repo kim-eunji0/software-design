@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.cookandroid.closet.mainfragment.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_clothCodi"
+            app:destination="@id/clothCodi" />
+        <action
+            android:id="@+id/action_home2_to_community"
+            app:destination="@id/community" />
+    </fragment>
+    <fragment
+        android:id="@+id/clothCodi"
+        android:name="com.cookandroid.closet.cancel.ClothCodi"
+        android:label="fragment_cloth_codi"
+        tools:layout="@layout/fragment_cloth_codi" >
+        <action
+            android:id="@+id/action_clothCodi_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_clothCodi_to_community"
+            app:destination="@id/community" />
+    </fragment>
+    <fragment
+        android:id="@+id/community"
+        android:name="com.cookandroid.closet.cancel.Community"
+        android:label="fragment_community"
+        tools:layout="@layout/fragment_community" >
+        <action
+            android:id="@+id/action_community_to_clothCodi"
+            app:destination="@id/clothCodi" />
+        <action
+            android:id="@+id/action_community_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+</navigation>
