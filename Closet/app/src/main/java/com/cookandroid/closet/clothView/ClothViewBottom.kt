@@ -90,4 +90,5 @@ class ClothViewBottom : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

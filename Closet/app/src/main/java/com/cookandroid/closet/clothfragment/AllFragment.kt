@@ -12,7 +12,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cookandroid.closet.clothView.ClothView
 import com.cookandroid.closet.databinding.FragmentAllBinding
-import com.cookandroid.closet.roomDB.ClosetDatabase
 import com.cookandroid.closet.roomDB.clothDB.ClothAdapter
 import com.cookandroid.closet.roomDB.clothDB.ClothViewModel
 
